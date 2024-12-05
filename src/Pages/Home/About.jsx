@@ -20,6 +20,7 @@ function About() {
             src="https://lottie.host/9d706cf1-4caf-48d2-848c-2115410f74f0/rUNVaaEA0T.lottie"
             loop
             autoplay
+            backgroundColor="transparent"
           />
         </div>
         <div className="flex flex-col gap-5 w-1/2 sm:w-full">
