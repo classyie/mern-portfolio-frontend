@@ -6,6 +6,7 @@ import Experiences from './Experiences';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
+import LeftSider from './LeftSider';
 
 function Home() {
     return (
@@ -18,6 +19,8 @@ function Home() {
                 <Projects />
                 <Contact />
                 <Footer />
+                <LeftSider />
+                {/* <Loader /> */}
             </div>
         </div>
     )
