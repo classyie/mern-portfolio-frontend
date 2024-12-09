@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import SecotionTitle from "../../Components/SecotionTitle";
 import { projects } from "../../resources/projects";
 
-
 function Projects() {
   const [selectedItemIndex, setSelectedItemIndex] = useState(0);
   return (
@@ -31,11 +30,36 @@ function Projects() {
         </div>
 
         <div className="flex items-center justify-center gap-10 sm:flex-col">
-          <img src={projects[selectedItemIndex].image} alt="" srcset="" className="h-45 w-40" />
+          <img
+            src={projects[selectedItemIndex].image}
+            alt=""
+            srcset=""
+            className="h-45 w-40"
+          />
           <div className="flex flex-col gap-5">
-            <h1 className="text-secondary text-xl ">
-              {projects[selectedItemIndex].title}
-            </h1>
+            {projects[selectedItemIndex].link ? (
+              <a
+                href={projects[selectedItemIndex].link}
+                target={
+                  projects[selectedItemIndex].link.startsWith("https://")
+                    ? "_blank"
+                    : undefined
+                }
+                rel={
+                  projects[selectedItemIndex].link.startsWith("https://")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
+              >
+                <h1 className="text-secondary text-xl">
+                  {projects[selectedItemIndex].title}
+                </h1>
+              </a>
+            ) : (
+              <h1 className="text-secondary text-xl">
+                {projects[selectedItemIndex].title}
+              </h1>
+            )}
 
             <p className="text-white">
               {projects[selectedItemIndex].description}

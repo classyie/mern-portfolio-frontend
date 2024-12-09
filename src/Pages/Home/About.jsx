@@ -26,17 +26,12 @@ function About() {
         <div className="flex flex-col gap-5 w-1/2 sm:w-full">
           <p className="text-white">
             {" "}
-            Hello, My name is Harshit Pandey. Currently working as a Full-Stack
-            Engineer at Hitachi. Building scalable web solutions while learning
-            React.js and MongoDB. Automating tasks using PowerShell with AI
-            tools to optimize workflows and drive innovation.
+            Hello, My name is Harshit Pandey. I am currently working as a Full-Stack Engineer at Hitachi, specializing in building scalable and robust web solutions. With a keen focus on innovation and efficiency, I am actively enhancing my expertise in React.js and MongoDB to create dynamic and user-friendly applications.
+
           </p>
           <p className="text-white">
             {" "}
-            Hello, My name is Harshit Pandey. Currently working as a Full-Stack
-            Engineer at Hitachi. Building scalable web solutions while learning
-            React.js and MongoDB. Automating tasks using PowerShell with AI
-            tools to optimize workflows and drive innovation.
+            In addition to my development work, I am passionate about streamlining processes through automation. By leveraging PowerShell and AI tools, I optimize workflows, boost productivity, and drive technological advancements. My goal is to continuously learn, innovate, and deliver impactful solutions that align with modern industry standards.
           </p>
         </div>
       </div>
